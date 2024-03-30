@@ -1,0 +1,25 @@
+﻿<Window x:Class="Student_registration_system.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_registration_system"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Login" FontSize="18" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        <Label Content="Username:" Grid.Row="1" Margin="20"/>
+        <TextBox x:Name="UsernameTextBox" Grid.Row="1" Margin="100,0,20,0"/>
+        <Label Content="Password:" Grid.Row="2" Margin="20"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="2" Margin="100,0,20,0"/>
+        <Button Content="Login" Grid.Row="3" Margin="20" Click="LoginButton_Click"/>
+        <Label x:Name="ErrorMessageLabel" Grid.Row="3" Margin="100,0,20,0" Foreground="Red"/>
+
+    </Grid>
+</Window>
